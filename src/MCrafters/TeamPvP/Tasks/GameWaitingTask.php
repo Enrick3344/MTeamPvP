@@ -24,7 +24,7 @@ class GameWaitingTask extends PluginTask
         $this->plugin = $plugin;
     }
 
-    public function onRun($tick)
+    public function onRun($currentTick)
     {
         foreach ($this->plugin->reds as $r) {
             foreach ($this->plugin->blues as $b) {
