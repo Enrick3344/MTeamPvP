@@ -17,7 +17,7 @@ class TeamPvPCmd extends Command{
         $this->plugin = $plugin;
     }
     
-    public function execute(CommandSender $sender, $label, array $args){
+    public function execute(CommandSender $sender, string $label, array $args): bool{
         if(!(isset($args[0]))) return false;
         switch($args[0]){
             case "add":
